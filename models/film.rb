@@ -76,4 +76,10 @@ class Film
     return film
   end
 
+#BASIC EXTENSION
+
+  def self.how_many_customers(film)
+    film.customers.count
+  end
+
 end

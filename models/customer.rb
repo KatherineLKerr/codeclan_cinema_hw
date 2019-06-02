@@ -22,6 +22,8 @@ class Customer
     return result
   end
 
+
+
 #CREATE
 
   def save
@@ -77,5 +79,10 @@ class Customer
     return customer
   end
 
+#BASIC EXTENSION
+
+  def self.how_many_tickets(customer)
+    customer.films.count
+  end
 
 end
